@@ -1,0 +1,17 @@
+* git init
+
+---------------------------------------------------------------------------------------
+
+UNA VEZ POR PC SI NO SE HIZO AUN
+
+* git config --global user.name nombreDeUsuario
+* git config --global user.email emailDeGithub
+
+---------------------------------------------------------------------------------------
+
+* (Crear al menos un archivo, de normal readme.md con descripción del proyecto)
+* git add .
+* git commit -m "first commit"
+* git branch -M main
+* git remote add origin https://github.com/usuario/nombreRepo
+* git push -u origin main
