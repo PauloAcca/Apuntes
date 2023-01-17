@@ -1,0 +1,38 @@
+[
+    {
+        "id": 7,
+        "marca": "Fierce",
+        "modelo": "FM18SI29AM211",
+        "rodado":16,
+        "año de fabricación": 2019,
+        "color":"Verde",
+        "pesoEnKG":13,
+        "tipo": "Montañera",
+        "precio": 100000,
+        "vendida": true
+    } ,
+    {
+        "id": 6,
+        "marca": "Shilfter",
+        "modelo": "Regal",
+        "rodado":26,
+        "año de fabricación": 2020,
+        "color":"Azul",
+        "pesoEnKG":16,
+        "tipo": "Paseo",
+        "precio": 50000,
+        "vendida": true
+    } , 
+    {
+        "id": 5 ,
+        "marca": "Battle",
+        "modelo": "Techno",
+        "rodado":28,
+        "año de fabricación": 2021,
+        "color":"Celeste",
+        "pesoEnKG":17,
+        "tipo": "Retro",
+        "precio": 70000,
+        "vendida": false
+    }
+]

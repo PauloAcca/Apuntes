@@ -1,0 +1,20 @@
+[
+    {
+        "marca": "Hot Toys",
+        "nombre": "Spider-Man",
+        "precio": 200,
+        "stock": 20
+    },
+    {
+        "marca": "Hot Toys",
+        "nombre": "Hellboy", 
+        "precio": 150,
+        "stock": 50
+    },
+    {
+        "marca": "Hot Toys",
+        "nombre": "Batman",
+        "precio": 300,
+        "stock": 25
+    }
+]   
