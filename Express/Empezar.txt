@@ -1,0 +1,37 @@
+INICIALIZAR E INSTALAR EXPRESS
+
+1.Tenemos que tener el archivo "package.json" creado y ejecutamos el comando:
+- npm init -y
+2.Luego instalamos la libreria con el comando:
+-npm install express
+(para el que quiera clonar el projecto tiene que poner el comando "npm install")
+3.Luego de esto tenemos que requerir el modulo en nuestro "entry-point" que usualemnte es llamado app.js:
+-const express = require("express");
+4.Creamos otra variable para llamar a la funcion de express:
+-const app = express();
+
+CREAR UN SERVIDOR WEB CON EXPRESS
+
+1.Primero inicalizamos e instalamos express.
+2.Al objeto app le pedimos el metodo listen que sirve para levantar el server.
+-app.listen(3000,() => console.log("Servidor Corriendo"))
+(el numero 3000 es el puerto que querramos)
+
+RUTAS Y RESPUESTAS
+
+1.El servidor ya esta iniciado con "app.get" podemos definir las rutas con sus respuestas.
+-app.get("/",(req, res) => {
+    res.send("hola mundo");
+});
+(El primer parametro es el URL de la ruta, el segundo es un callback "contiene la peticion que llego, res la respuesta)
+(En vez de get podemos colocar cualquier metodo HTTP como get, post, put, patch, delete).
+(En este caso estamos usando "res.send" para dar una respues pero solo puede enviar un texto plano
+en el caso de querer enviar un archivo tendremos que utilizar "res.sendFile")
+
+USAR SENDFILE
+-const path = require("path");
+-app.get("/", (req, res) => {
+    let htmlPath = path.resolve(__dirname, "direccion del archivo")
+    res.sendFile(htmlPath);
+};
+(hay que llamar al metodo path para lograr conseguir una ruta absoluta que el senFile precese bien)
