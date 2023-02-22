@@ -28,3 +28,39 @@
 .main-nav__item::after{
     content: " | ";
 }
+
+/* --------------- TRANSICIONES */
+.main-nav{
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+    background-color: aquamarine;
+    /* se usa para el nombre de las propiedades en las que se va a aplicar la transicion */
+    transition-property: background-color, color;
+    /* se usa para establecer el tiempo de duracion de la transicion */
+    transition-duration: 0.5s;
+    /* Resumido */
+    transition: 
+        color,0.5s,
+        /* si queres que sea para todas las propiedades  */
+        all, 0.5s
+    ;
+    
+}   
+.main-nav__item:hover{
+    color: blue;
+}
+
+/* ------------------ ANIMACIONES */
+
+/* creamos la animacion */
+@keyframes nombreDelaAnimacion{
+    /* van del 0% al 100%  */
+    0%{opacity: 0%}
+    25%{transform: translateY(-20px); opacity: 100%;}
+    100%{opacity: 0%;}
+}
+
+.elementoAlqueleQueremosPonerlaAnimacion{
+    animation: nombreDelaAnimacion duracion cuantoQueremosQueSeRepita;
+}
