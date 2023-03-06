@@ -1,0 +1,35 @@
+body{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: grey;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+a{
+    text-decoration: none;
+    color: orange;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+h1{
+    text-align: center;
+}
+
+.pato{
+    display: block;
+    width: 350px;
+    max-width: 100%;
+    margin: auto;
+}
+
+header{
+    background-color: beige;
+}
+
+ul{
+    text-align: center;
+}

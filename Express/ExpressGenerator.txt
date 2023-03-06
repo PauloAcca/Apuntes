@@ -1,0 +1,15 @@
+Primero corremos este codigo en un carpeta nueva:
+* npm install express-generator -g
+
+Luego corremos este y donde dice "myApp" ponemos el nombre del proyecto o carpeta:
+* express myApp --ejs 
+
+Luego corremos el comando para instalar todas las dependencias:
+* npm install
+
+Para iniciar el servidor corremos:
+* nodemon bin/www
+
+Y en el navegador ponemos:
+LocalHost:3000
+
